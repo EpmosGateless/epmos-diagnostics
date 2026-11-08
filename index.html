@@ -169,6 +169,44 @@
   .step h3 .num { color: var(--aqua); }
   .step p { margin: 0; }
 
+  /* Ad banner — More from EPMOS */
+  .ad-banner {
+    background: var(--ink);
+    color: #fff;
+    border-top: 4px solid var(--ember);
+    padding: 48px 0;
+  }
+  .ad-banner h2 {
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  .ad-banner h2 span { color: var(--aqua); }
+  .ad-banner p.intro {
+    color: #9fb3bd;
+    font-size: 15px;
+    margin: 0 0 24px;
+  }
+  .ad-banner ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .ad-banner li {
+    padding: 14px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .ad-banner li:first-child { border-top: none; }
+  .ad-banner a {
+    color: var(--aqua);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .ad-banner a:hover { text-decoration: underline; }
+  .ad-banner .svc { font-weight: 700; color: #fff; }
+  .ad-banner li span.desc { color: #c8d6dc; }
+
   footer {
     background: var(--ink);
     color: #9fb3bd;
@@ -260,7 +298,7 @@
 
       <div class="step">
         <h3><span class="num">1.</span> Submit &amp; Scope</h3>
-        <p>Provide your stack specifications (Python, FastAPI, Docker, Nginx) and describe the active failure vector — on the intake form, in plain language. No name, no email, no account is required. You receive an engagement ID; keep it. It is the only way to track and retrieve your report.</p>
+        <p>Provide your stack specifications (Python, FastAPI, Docker, Nginx) and describe the active failure vector — on the intake form, in plain language. The form asks for your full name, company name, work email, telephone number, and project name. A free customer account is created for you — it costs nothing. Your report is delivered to the account owner, and you sign back in with your account to see your engagements and reports.</p>
       </div>
 
       <div class="step">
@@ -277,13 +315,28 @@
 
   <section>
     <div class="wrap">
-      <h2>Anonymous Intake</h2>
-      <p>Submit your request without a name, an email, or an account. Describe your stack and the failure in plain language. You receive an engagement ID — keep it. That ID is your payment reference and the only way to retrieve your report.</p>
-      <p>After you submit, you pay $2,500 flat, then record your Stripe payment ID against your engagement ID so your payment is matched to your request. Your report appears on your retrieval page.</p>
+      <h2>Customer Account &amp; Intake</h2>
+      <p>Submit your request with your full name, company name, work email, telephone number, and project name. A free customer account is created for you — it costs nothing. Your report is delivered to the account owner, and you sign back in with your account to see your engagements and reports.</p>
+      <p>After you submit, you pay $2,500 flat, then record your Stripe payment ID against your engagement so your payment is matched to your request. Your report is delivered to your account.</p>
+      <p>EPMOS stores your contact information to serve your engagement and follow up; it does not sell or share customer information.</p>
       <a class="cta" href="https://diagnostics.epmos.tech/intake">Start a Diagnostic Request</a>
     </div>
   </section>
 </main>
+
+<section class="ad-banner" aria-label="More from EPMOS">
+  <div class="wrap">
+    <h2>More from <span>EPMOS</span></h2>
+    <p class="intro">Other services from EPMOS — and live advertising spots on this site.</p>
+    <ul>
+      <li><a href="https://admin.epmos.tech/jacket/">EPMOS Jacket</a> <span class="desc">— Your project. Your platform. Keep your governance.</span></li>
+      <li><span class="svc">Atlas &amp; Atkins</span> <span class="desc">— Institutional protection: they detect discrepancies, preserve accountability, and prevent unauthorized activity.</span></li>
+      <li><a href="https://admin.epmos.tech/studio/">EPMOS Studio</a> <span class="desc">— On-brand visuals and campaign assets, built to Lab level.</span></li>
+      <li><a href="https://admin.epmos.tech/course/">AI Systems Engineer Course</a> <span class="desc">— Learn to build governed AI systems.</span></li>
+      <li><span class="svc">Companion Factory</span> <span class="desc">— Builds companions, custom dashboards, and software, all from Golden baselines.</span></li>
+    </ul>
+  </div>
+</section>
 
 <footer>
   <div class="wrap">
