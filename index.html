@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enterprise Autonomous Systems Repair &amp; Diagnostics — EPMOS</title>
+<meta name="description" content="Mission-critical failure analysis, anomaly isolation, and runtime remediation for self-hosted architectures, distributed micro data center nodes, and local-first AI pipelines. No cloud dependencies. No external lock-in.">
+<style>
+  :root {
+    --ink: #071924;
+    --aqua: #42e0d0;
+    --ember: #ff6b3d;
+    --royale: #a78bfa;
+    --paper: #ffffff;
+    --mist: #f4f7f8;
+    --line: #d9e2e6;
+    --body: #22333d;
+    --muted: #5a6b74;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--body);
+    background: var(--paper);
+    line-height: 1.6;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+  /* Header / wordmark */
+  header {
+    background: var(--ink);
+    color: #fff;
+    padding: 18px 0;
+  }
+  header .wrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .wordmark {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .wordmark span { color: var(--aqua); }
+  header .tag {
+    font-size: 13px;
+    color: #9fb3bd;
+    letter-spacing: 0.04em;
+  }
+
+  /* Hero */
+  .hero {
+    background: var(--ink);
+    color: #fff;
+    padding: 72px 0 80px;
+    border-bottom: 4px solid var(--aqua);
+  }
+  .hero h1 {
+    margin: 0 0 20px;
+    font-size: 44px;
+    line-height: 1.15;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  .hero p {
+    margin: 0 0 32px;
+    font-size: 19px;
+    line-height: 1.55;
+    color: #c8d6dc;
+    max-width: 720px;
+  }
+  .cta {
+    display: inline-block;
+    background: var(--ember);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 15px 32px;
+    border-radius: 6px;
+  }
+  .cta:hover { background: #e85a2e; }
+  .cta.secondary {
+    background: transparent;
+    border: 2px solid var(--aqua);
+    color: var(--aqua);
+  }
+  .cta.secondary:hover { background: rgba(66, 224, 208, 0.12); }
+
+  /* Sections */
+  section { padding: 56px 0; }
+  section + section { border-top: 1px solid var(--line); }
+  section.alt { background: var(--mist); }
+  h2 {
+    margin: 0 0 20px;
+    font-size: 28px;
+    line-height: 1.25;
+    color: var(--ink);
+    font-weight: 800;
+  }
+  section p { margin: 0 0 16px; font-size: 17px; }
+  section p:last-child { margin-bottom: 0; }
+
+  /* Services */
+  .service { margin-bottom: 36px; }
+  .service:last-child { margin-bottom: 0; }
+  .service h3 {
+    margin: 0 0 10px;
+    font-size: 21px;
+    color: var(--ink);
+    font-weight: 700;
+  }
+  .service h3 .num { color: var(--aqua); }
+  .service .label {
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .service p { margin: 0 0 8px; }
+  .service p:last-child { margin-bottom: 0; }
+
+  /* Pricing */
+  .price-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--aqua);
+    border-radius: 8px;
+    padding: 32px;
+  }
+  .price-card h3 {
+    margin: 0 0 6px;
+    font-size: 22px;
+    color: var(--ink);
+    font-weight: 700;
+  }
+  .price {
+    margin: 0 0 16px;
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--ink);
+    line-height: 1.1;
+  }
+  .price small {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--muted);
+  }
+  .price-card p { margin: 0 0 24px; }
+
+  /* Visuals */
+  figure.visual { margin: 0 0 24px; }
+  figure.visual img { width: 100%; height: auto; display: block; border-radius: 8px; }
+  .hero figure.visual { margin-top: 36px; margin-bottom: 0; }
+  .hero figure.visual img { border: 1px solid rgba(255,255,255,0.18); }
+
+  /* How it works */
+  .step { margin-bottom: 28px; }
+  .step:last-child { margin-bottom: 0; }
+  .step h3 {
+    margin: 0 0 6px;
+    font-size: 20px;
+    color: var(--ink);
+    font-weight: 700;
+  }
+  .step h3 .num { color: var(--aqua); }
+  .step p { margin: 0; }
+
+  footer {
+    background: var(--ink);
+    color: #9fb3bd;
+    padding: 28px 0;
+    font-size: 14px;
+  }
+  footer .wordmark { font-size: 15px; }
+
+  @media (max-width: 640px) {
+    .hero { padding: 48px 0 56px; }
+    .hero h1 { font-size: 32px; }
+    .hero p { font-size: 17px; }
+    section { padding: 40px 0; }
+    h2 { font-size: 24px; }
+    .price { font-size: 32px; }
+    header .tag { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="wordmark" href="#">EPMOS<span>.</span></a>
+    <span class="tag">Enterprise Autonomous Systems Repair &amp; Diagnostics</span>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Enterprise Autonomous Systems Repair &amp; Diagnostics</h1>
+    <p>Mission-critical failure analysis, anomaly isolation, and runtime remediation for self-hosted architectures, distributed micro data center nodes, and local-first AI pipelines. No cloud dependencies. No external lock-in.</p>
+    <a class="cta" href="https://buy.stripe.com/fZu14o6BT7mp2wj0PqfEk0o">Submit Diagnostic Request</a>
+    <figure class="visual"><img src="triptych.jpg" alt="Anomaly Isolation in the Air-Gapped Stack, The Proven Remediation Deployment, and The Diagnostic &amp; Remediation Sprint — $2,500"></figure>
+  </div>
+</div>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h2>The Problem &amp; The Standard</h2>
+      <p>Modern autonomous runtimes and distributed nodes are unforgiving. When a harness fault, ledger corruption, or state-change violation brings down a local-first deployment, standard IT support and generic scripts fail because they lack architectural context.</p>
+      <p>You need deterministic isolation, governed-word verification, and proven remediation that preserves state without rolling back your entire environment.</p>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>Core Service Offerings</h2>
+
+      <div class="service">
+        <h3><span class="num">1.</span> Anomaly Isolation &amp; State Verification</h3>
+        <figure class="visual"><img src="anomaly-isolation.jpg" alt="Anomaly Isolation in the Air-Gapped Stack"></figure>
+        <p><span class="label">What it is:</span> Deep-dive forensic audit of server logs, Nginx access records, and container daemon registries (epmos-deployd). We isolate corrupted ledgers, trace unauthorized state changes, and verify SHA-256 integrity across your stack.</p>
+        <p><span class="label">Deliverable:</span> Complete isolation report and cryptographic verification pass.</p>
+      </div>
+
+      <div class="service">
+        <h3><span class="num">2.</span> Autonomous Runtime Harness Repair</h3>
+        <figure class="visual"><img src="remediation-deployment.jpg" alt="The Proven Remediation Deployment — Secure Engineering Workstation"></figure>
+        <p><span class="label">What it is:</span> Direct intervention for stalled or oversized-body harness test runs, misconfigured companion labels, and broken Z-bend or routing logic within custom automation pipelines.</p>
+        <p><span class="label">Deliverable:</span> Restored execution, patch deployment, and resumed candidate code pipelines without data loss.</p>
+      </div>
+
+      <div class="service">
+        <h3><span class="num">3.</span> Air-Gapped Environment Hardening</h3>
+        <p><span class="label">What it is:</span> Security hardening and credential placement audits for local-first infrastructure, ensuring absolute isolation from external telemetry and vendor lock-in.</p>
+        <p><span class="label">Deliverable:</span> Hardened ingress rules, verified IMAP/SMTP bridge credentials, and locked-down reverse proxy configurations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Pricing &amp; Packaging</h2>
+      <div class="price-card">
+        <h3>The Diagnostic &amp; Remediation Sprint</h3>
+        <p class="price">$2,500 <small>flat per engagement</small></p>
+        <p>Up to 72 hours of dedicated forensic isolation, harness repair, and runtime verification for a single local-first or distributed node environment. Includes complete SHA-256 integrity check and direct remediation deployment.</p>
+        <figure class="visual"><img src="sprint.jpg" alt="The Diagnostic &amp; Remediation Sprint — $2,500"></figure>
+        <a class="cta secondary" href="https://buy.stripe.com/fZu14o6BT7mp2wj0PqfEk0o">Secure Your Diagnostic Slot</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>How It Works (The Protocol)</h2>
+
+      <div class="step">
+        <h3><span class="num">1.</span> Submit &amp; Scope</h3>
+        <p>Provide your stack specifications (Python, FastAPI, Docker, Nginx) and describe the active failure vector.</p>
+      </div>
+
+      <div class="step">
+        <h3><span class="num">2.</span> Isolate &amp; Audit</h3>
+        <p>We run our proven adversarial testing gauntlet and cryptographic verification protocols against your logs and codebase.</p>
+      </div>
+
+      <div class="step">
+        <h3><span class="num">3.</span> Remediate &amp; Release</h3>
+        <p>The exact patch, harness fix, or state-recovery script is deployed directly to your environment. You are back online.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="wordmark">EPMOS<span>.</span></span>
+    &nbsp;—&nbsp; Enterprise Autonomous Systems Repair &amp; Diagnostics
+  </div>
+</footer>
+
+</body>
+</html>
