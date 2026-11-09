@@ -260,8 +260,14 @@
     header .tag { display: none; }
     .hero-art { padding: 24px 0 32px; }
     .art-btn {
+      /* Inline left/top/width/height place the desktop overlays; at phone width
+         the buttons must be full-width stacked bars, so the inline width/height
+         are overridden here (!important beats inline style). border-box keeps
+         padding + border inside the 100% width. */
       position: static;
-      width: 100%;
+      width: 100% !important;
+      height: auto !important;
+      box-sizing: border-box;
       margin: 10px 0 0;
       padding: 14px 20px;
       background: transparent;
