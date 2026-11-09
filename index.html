@@ -123,6 +123,13 @@
   .service p { margin: 0 0 8px; }
   .service p:last-child { margin-bottom: 0; }
 
+  /* Service cards — four diagnostic sub-pages */
+  .svc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .svc-card { border: 1px solid var(--line); border-radius: 8px; padding: 20px; }
+  .svc-card img { width: 100%; height: auto; display: block; border-radius: 6px; margin-bottom: 16px; }
+  .svc-card h3 { margin: 0 0 6px; font-size: 20px; color: var(--ink); font-weight: 700; }
+  .svc-card p { margin: 0 0 16px; }
+
   /* Pricing */
   .price-card {
     background: var(--paper);
@@ -221,6 +228,7 @@
     .hero p { font-size: 17px; }
     section { padding: 40px 0; }
     h2 { font-size: 24px; }
+    .svc-grid { grid-template-columns: 1fr; }
     .price { font-size: 32px; }
     header .tag { display: none; }
   }
@@ -245,6 +253,38 @@
 </div>
 
 <main>
+  <section>
+    <div class="wrap">
+      <h2>Diagnostics &amp; Repair Services</h2>
+      <div class="svc-grid">
+        <div class="svc-card">
+          <a href="https://admin.epmos.tech/diagnostics/harness-diagnostics/"><img src="/diagnostics/panel-harness-diagnostics.jpg" alt="Harness Diagnostics — Find the Problem. Know the Cause."></a>
+          <h3>Harness Diagnostics</h3>
+          <p>Find the Problem. Know the Cause.</p>
+          <a class="cta secondary" href="https://admin.epmos.tech/diagnostics/harness-diagnostics/">Get Started</a>
+        </div>
+        <div class="svc-card">
+          <a href="https://admin.epmos.tech/diagnostics/harness-repair/"><img src="/diagnostics/panel-harness-repair.jpg" alt="Harness Repair — Fix It Right. The First Time."></a>
+          <h3>Harness Repair</h3>
+          <p>Fix It Right. The First Time.</p>
+          <a class="cta secondary" href="https://admin.epmos.tech/diagnostics/harness-repair/">Run Repair</a>
+        </div>
+        <div class="svc-card">
+          <a href="https://admin.epmos.tech/diagnostics/cross-platform/"><img src="/diagnostics/panel-cross-platform.jpg" alt="Cross-Platform Continuity — One Standard. Every Platform."></a>
+          <h3>Cross-Platform Continuity</h3>
+          <p>One Standard. Every Platform.</p>
+          <a class="cta secondary" href="https://admin.epmos.tech/diagnostics/cross-platform/">Run Cross-Platform Test</a>
+        </div>
+        <div class="svc-card">
+          <a href="https://admin.epmos.tech/diagnostics/trusted-by-design/"><img src="/diagnostics/panel-trusted-by-design.jpg" alt="Trusted by Design — Built for Integrity. Proven in the Field."></a>
+          <h3>Trusted by Design</h3>
+          <p>Built for Integrity. Proven in the Field.</p>
+          <a class="cta secondary" href="https://admin.epmos.tech/diagnostics/trusted-by-design/">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section>
     <div class="wrap">
       <h2>The Problem &amp; The Standard</h2>
