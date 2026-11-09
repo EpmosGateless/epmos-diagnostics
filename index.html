@@ -164,6 +164,33 @@
   .hero figure.visual { margin-top: 36px; margin-bottom: 0; }
   .hero figure.visual img { border: 1px solid rgba(255,255,255,0.18); }
 
+  /* Art-first hero: plate art leads; side labels are real buttons */
+  .hero-art {
+    background: var(--ink);
+    color: #fff;
+    padding: 32px 0 40px;
+  }
+  .hero-art figure.visual { margin: 0; position: relative; }
+  .hero-art figure.visual img { border: 1px solid rgba(255,255,255,0.18); }
+  .art-btn {
+    position: absolute;
+    display: block;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+  .art-btn:hover, .art-btn:focus-visible {
+    outline: 2px solid var(--aqua);
+    outline-offset: -2px;
+    background: rgba(66, 224, 208, 0.10);
+  }
+  .art-btn span {
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
   /* How it works */
   .step { margin-bottom: 28px; }
   .step:last-child { margin-bottom: 0; }
@@ -231,6 +258,26 @@
     .svc-grid { grid-template-columns: 1fr; }
     .price { font-size: 32px; }
     header .tag { display: none; }
+    .hero-art { padding: 24px 0 32px; }
+    .art-btn {
+      position: static;
+      width: 100%;
+      margin: 10px 0 0;
+      padding: 14px 20px;
+      background: transparent;
+      border: 2px solid var(--aqua);
+      color: var(--aqua);
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .art-btn span {
+      position: static;
+      width: auto; height: auto;
+      overflow: visible;
+      clip: auto;
+      white-space: normal;
+    }
   }
 </style>
 </head>
@@ -243,12 +290,23 @@
   </div>
 </header>
 
+<div class="hero-art">
+  <div class="wrap">
+    <figure class="visual">
+      <img src="hero-diagnose-repair-validate.jpg" alt="EPMOS Diagnose, Repair, Validate — All Systems Operational">
+      <a class="art-btn" style="left:79.2%;top:27.8%;width:17.7%;height:6.9%" href="https://admin.epmos.tech/diagnostics/harness-diagnostics/" aria-label="Harness Diagnostics"><span>Harness Diagnostics</span></a>
+      <a class="art-btn" style="left:79.2%;top:35.3%;width:17.7%;height:6.8%" href="https://admin.epmos.tech/diagnostics/harness-repair/" aria-label="Harness Repair"><span>Harness Repair</span></a>
+      <a class="art-btn" style="left:79.2%;top:42.7%;width:17.7%;height:6.9%" href="https://admin.epmos.tech/diagnostics/cross-platform/" aria-label="Cross-Platform Continuity"><span>Cross-Platform Continuity</span></a>
+      <a class="art-btn" style="left:79.2%;top:50.1%;width:17.7%;height:6.9%" href="https://admin.epmos.tech/diagnostics/trusted-by-design/" aria-label="Trusted by Design"><span>Trusted by Design</span></a>
+    </figure>
+  </div>
+</div>
+
 <div class="hero">
   <div class="wrap">
     <h1>Enterprise Autonomous Systems Repair &amp; Diagnostics</h1>
     <p>Mission-critical failure analysis, anomaly isolation, and runtime remediation for self-hosted architectures, distributed micro data center nodes, and local-first AI pipelines — with no cloud dependencies and no external lock-in.</p>
     <a class="cta" href="https://admin.epmos.tech/diagnostics/intake">Submit Diagnostic Request</a>
-    <figure class="visual"><img src="hero-diagnose-repair-validate.jpg" alt="EPMOS Diagnose, Repair, Validate — All Systems Operational"></figure>
   </div>
 </div>
 
