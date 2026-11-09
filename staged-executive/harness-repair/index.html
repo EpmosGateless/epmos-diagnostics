@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harness Repair — EPMOS Diagnostics</title>
+<meta name="description" content="Harness Repair — Correct repair, completed the first time.">
+<style>
+  :root {
+    --ink: #071924;
+    --aqua: #42e0d0;
+    --ember: #ff6b3d;
+    --royale: #a78bfa;
+    --paper: #ffffff;
+    --mist: #f4f7f8;
+    --line: #d9e2e6;
+    --body: #22333d;
+    --muted: #5a6b74;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--body);
+    background: var(--paper);
+    line-height: 1.6;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+  header {
+    background: var(--ink);
+    color: #fff;
+    padding: 18px 0;
+  }
+  header .wrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .wordmark {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .wordmark span { color: var(--aqua); }
+  header .tag {
+    font-size: 13px;
+    color: #9fb3bd;
+    letter-spacing: 0.04em;
+  }
+  .hero {
+    background: var(--ink);
+    color: #fff;
+    padding: 56px 0 64px;
+    border-bottom: 4px solid var(--aqua);
+  }
+  .hero h1 {
+    margin: 0 0 12px;
+    font-size: 40px;
+    line-height: 1.15;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  .hero p {
+    margin: 0;
+    font-size: 19px;
+    line-height: 1.55;
+    color: #c8d6dc;
+    max-width: 720px;
+  }
+  figure.visual { margin: 0 0 28px; }
+  figure.visual img { width: 100%; height: auto; display: block; border-radius: 8px; border: 1px solid rgba(255,255,255,0.18); }
+  .cta {
+    display: inline-block;
+    background: var(--ember);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 15px 32px;
+    border-radius: 6px;
+  }
+  .cta:hover { background: #e85a2e; }
+  section { padding: 56px 0; }
+  section + section { border-top: 1px solid var(--line); }
+  section p { margin: 0 0 16px; font-size: 17px; }
+  section p:last-child { margin-bottom: 0; }
+  .checks { list-style: none; margin: 24px 0 0; padding: 0; font-size: 17px; }
+  .checks li { padding: 6px 0 6px 30px; position: relative; }
+  .checks li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    color: var(--aqua);
+    font-weight: 700;
+  }
+  .cta-mid { text-align: center; padding: 72px 0; }
+  .cta-mid .cta { font-size: 19px; padding: 18px 40px; }
+  .backlink { font-size: 16px; }
+  .backlink a { color: var(--aqua); font-weight: 700; text-decoration: none; }
+  .backlink a:hover { text-decoration: underline; }
+  footer {
+    background: var(--ink);
+    color: #9fb3bd;
+    padding: 28px 0;
+    font-size: 14px;
+  }
+  footer .wordmark { font-size: 15px; }
+  @media (max-width: 640px) {
+    .hero { padding: 40px 0 48px; }
+    .hero h1 { font-size: 30px; }
+    .hero p { font-size: 17px; }
+    section { padding: 40px 0; }
+    .cta-mid { padding: 56px 0; }
+    header .tag { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="wordmark" href="https://admin.epmos.tech/diagnostics/">EPMOS<span>.</span></a>
+    <span class="tag">Enterprise Autonomous Systems Repair &amp; Diagnostics</span>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <figure class="visual"><img src="/diagnostics/panel-harness-repair.jpg" alt="EPMOS Harness Repair — Correct repair, completed the first time."></figure>
+    <h1>Harness Repair</h1>
+    <p>Correct repair, completed the first time.</p>
+  </div>
+</div>
+
+<main>
+  <section>
+    <div class="wrap">
+      <p>Guided repair procedures restore damaged or faulty harnesses using proven methods, verified tools, and EPMOS best practices.</p>
+      <ul class="checks">
+        <li>Step-by-Step Guidance</li>
+        <li>Verify the Repair</li>
+        <li>Document the Work</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta-mid">
+    <div class="wrap">
+      <a class="cta" href="https://admin.epmos.tech/diagnostics/intake">Run Repair</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="backlink"><a href="https://admin.epmos.tech/diagnostics/">&larr; Back to Diagnostics</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="wordmark">EPMOS<span>.</span></span>
+    &nbsp;—&nbsp; Enterprise Autonomous Systems Repair &amp; Diagnostics
+  </div>
+</footer>
+
+</body>
+</html>

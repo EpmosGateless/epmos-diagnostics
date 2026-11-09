@@ -1,0 +1,166 @@
+{
+  "applied": [
+    {
+      "page": "index.html",
+      "label": "L1 hero subheadline (+ meta)",
+      "occurrences": 2
+    },
+    {
+      "page": "index.html",
+      "label": "L2 Harness Diagnostics tagline",
+      "occurrences": 2
+    },
+    {
+      "page": "index.html",
+      "label": "L3 Harness Repair tagline",
+      "occurrences": 2
+    },
+    {
+      "page": "index.html",
+      "label": "L4 Problem para 1",
+      "occurrences": 1
+    },
+    {
+      "page": "index.html",
+      "label": "L5 Problem para 2",
+      "occurrences": 1
+    },
+    {
+      "page": "index.html",
+      "label": "L6 Service 1 body",
+      "occurrences": 1
+    },
+    {
+      "page": "index.html",
+      "label": "L7 Service 1 deliverable",
+      "occurrences": 1
+    },
+    {
+      "page": "index.html",
+      "label": "L8 Service 2 body",
+      "occurrences": 1
+    },
+    {
+      "page": "index.html",
+      "label": "L9 Service 2 deliverable",
+      "occurrences": 1
+    },
+    {
+      "page": "index.html",
+      "label": "L10 Service 3 body",
+      "occurrences": 1
+    },
+    {
+      "page": "index.html",
+      "label": "L11 Service 3 deliverable",
+      "occurrences": 1
+    },
+    {
+      "page": "index.html",
+      "label": "L12 Pricing paragraph",
+      "occurrences": 1
+    },
+    {
+      "page": "index.html",
+      "label": "L13 How It Works heading",
+      "occurrences": 1
+    },
+    {
+      "page": "index.html",
+      "label": "L14 Step 1 Submit & Scope",
+      "occurrences": 1
+    },
+    {
+      "page": "index.html",
+      "label": "L15 Step 2 Isolate & Audit",
+      "occurrences": 1
+    },
+    {
+      "page": "index.html",
+      "label": "L16 Step 3 Remediate & Release",
+      "occurrences": 1
+    },
+    {
+      "page": "index.html",
+      "label": "L17 Customer Account para 1",
+      "occurrences": 1
+    },
+    {
+      "page": "index.html",
+      "label": "L18 Customer Account para 2",
+      "occurrences": 1
+    },
+    {
+      "page": "index.html",
+      "label": "L19 Ad banner intro",
+      "occurrences": 1
+    },
+    {
+      "page": "index.html",
+      "label": "L20 Ad banner Jacket",
+      "occurrences": 1
+    },
+    {
+      "page": "index.html",
+      "label": "L21 Ad banner Studio",
+      "occurrences": 1
+    },
+    {
+      "page": "index.html",
+      "label": "L22 Ad banner Companion Factory",
+      "occurrences": 1
+    },
+    {
+      "page": "harness-diagnostics/index.html",
+      "label": "D1 tagline (+ meta)",
+      "occurrences": 3
+    },
+    {
+      "page": "harness-diagnostics/index.html",
+      "label": "D2 body",
+      "occurrences": 1
+    },
+    {
+      "page": "harness-diagnostics/index.html",
+      "label": "D3 checklist Scan",
+      "occurrences": 1
+    },
+    {
+      "page": "harness-diagnostics/index.html",
+      "label": "D4 checklist Reports",
+      "occurrences": 1
+    },
+    {
+      "page": "harness-repair/index.html",
+      "label": "R1 tagline (+ meta)",
+      "occurrences": 3
+    },
+    {
+      "page": "harness-repair/index.html",
+      "label": "R2 body",
+      "occurrences": 1
+    },
+    {
+      "page": "cross-platform/index.html",
+      "label": "C1 body",
+      "occurrences": 1
+    },
+    {
+      "page": "trusted-by-design/index.html",
+      "label": "T1 body",
+      "occurrences": 1
+    }
+  ],
+  "held": [],
+  "missing_old": [],
+  "publish_step": "After Steve approves the wording — LOCAL+GIT one-liner: cd ~/workspace/github-deploy/epmos-diagnostics && cp staged-executive/index.html index.html && for d in harness-diagnostics harness-repair cross-platform trusted-by-design; do cp staged-executive/$d/index.html $d/index.html; done && git add index.html harness-diagnostics/index.html harness-repair/index.html cross-platform/index.html trusted-by-design/index.html && git commit -m \"Publish executive-register diagnostics copy (Founder-approved 2026-11-08)\" && git push origin Working",
+  "publish_iron_leg": "Then sync the same five files to Iron /var/www/diagnostics.epmos.tech/ (index.html + the four subdir index.html files) via the established Iron SSH deploy route (~/.ssh/iron_ssh.sh, host 108.175.7.238 — the same route used for the shield swaps), then curl-verify all five URLs return 200 with the new copy.",
+  "live_files_untouched": true,
+  "live_sha256_before": {
+    "index.html": "58c4cd5a9f545a31c9314b2173979886a888ef3e9f2e48edc9b3e94713980a6b",
+    "harness-diagnostics/index.html": "bc5e69d9eaf7a05b943efefe6ab1ccf6972ce152d6e1910fba6240662ebcc43d",
+    "harness-repair/index.html": "102e273eedfd0190ab73ff7e5847bdb23674a2ac3b9407fdea34b5a7421af380",
+    "cross-platform/index.html": "d63a7494a8d50b3f35c0b9f8b1cff17e4ee3f60435616ecd1b5bc619368ea748",
+    "trusted-by-design/index.html": "ceea5f75949f4cdf75a7e1777f286807b5643bc7fef24075d24c91784e843789"
+  }
+}
